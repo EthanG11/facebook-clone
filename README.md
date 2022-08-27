@@ -1,24 +1,11 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project, I implemented a Facebook clone in Ruby on Rails. Currently supported features include posts, comments, search for other users, friends/friend requests, notifications, and a user feed.
 
-Things you may want to cover:
+Features currently being worked on include Likes,messaging, and a user profile view. 
 
-* Ruby version
+The Devise Gem handles user authentication.
+and the Gravatar API is queried for user profile pictures through the Gravatastic gem.
 
-* System dependencies
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
