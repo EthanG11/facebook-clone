@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FacebookClone</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <script src="https://kit.fontawesome.com/9dcc4f59c9.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <%=render "home/nav"%>
+    <% flash.each do |type, msg| %>
+    <%if(type!="users")%>
+    <div>
+    <%= msg %>
+    </div>
+    <%end%>
+  <% end %>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+<%=@user.name%>
+<%@user_posts.each do |post|%>
+
+<%=render "posts/show_post", post: post, author: @user, comments: Comment.where(post_id:post.id) %>
+
+<%end%>

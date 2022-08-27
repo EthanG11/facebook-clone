@@ -1,0 +1,20 @@
+<div class="post">
+<div class="top_of_post">
+    <div class = "profile_pic"><%=image_tag author.gravatar_url%> </div>
+
+    <div class="top_right">
+        <div><%=author.name%></div>
+        <div><%=post.created_at%></div>
+    </div>
+</div>
+
+<div class ="body"><div><%=post.text%></div>
+
+<div class = "comment"><%=render "comments/new_comment", post: post%></div>
+</div>
+<div class ="comments"><%=render "comments/show_comments", comments: comments%></div>
+
+
+</div>
+
+

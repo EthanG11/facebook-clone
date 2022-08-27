@@ -1,0 +1,7 @@
+<div>
+<%=form_with model: @comment do |f|%>
+        <%=f.text_field :text, class: "form-control form-control-small",placeholder: "Write a comment"%>
+        <%=f.hidden_field :post_id, value: post.id %>
+        <%=f.submit "Comment", class: "btn btn-outline-dark btn-small"%>
+        <%end%>
+</div>

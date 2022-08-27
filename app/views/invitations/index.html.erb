@@ -1,0 +1,14 @@
+
+<%flash.each do |type,msg|%>
+<%=msg%>
+<%end%>
+<%@invitations.each do |invitation|%>
+<%=render "display_user", user: invitation.sender%>
+<%=form_with url: friend_lists_path,method: "post" do |form|%>
+<%=form.hidden_field(:sender_id,value: invitation.sender.id)%>
+<%=form.submit "Accept"%>
+
+<%end%>
+<%=button_to "Decline", invitation_path(invitation.id),method: :delete%>
+
+<%end%>

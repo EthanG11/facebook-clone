@@ -1,0 +1,16 @@
+<%=stylesheet_link_tag "home"%>
+<div>Matching Users:</div>
+<%if(flash[:users])%>
+<%flash[:users].each do |user|%>
+<%=user["name"]%>
+<%=user["id"]%>
+
+<%=form_with url: invitations_path, method: "post" do |f|%>
+
+<%=f.hidden_field :sender_id, value: current_user.id %>
+<%=f.hidden_field :user_id, value: user["id"] %>
+
+<%=f.submit "send friend request"%>
+<%end%>
+<%end%>
+<%end%>

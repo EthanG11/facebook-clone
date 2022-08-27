@@ -1,0 +1,13 @@
+<%=stylesheet_link_tag "feed"%>
+<div class="bg-light">
+
+<%=render "posts/new_post"%>
+<%@show_posts.each do |post|%>
+<%=render "posts/show_post", post: post, author: User.find(post.user_id), comments: Comment.where(post_id:post.id) %>
+
+<%end%>
+
+
+
+
+

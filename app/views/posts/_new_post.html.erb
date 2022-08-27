@@ -1,0 +1,9 @@
+<%=stylesheet_link_tag "new-post"%>
+<div class="container3">
+    <div>What on your mind?</div>
+        <%=form_with model: @post do |f|%>
+        <%=f.text_field :text, class: "form-control form-control-lg"%>
+        <%=f.submit "Share", class: "btn btn-outline-dark btn-small"%>
+        <%end%>
+    </div>
+</div>

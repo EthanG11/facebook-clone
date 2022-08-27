@@ -1,0 +1,54 @@
+#container{
+
+}
+
+.post{
+    width:79%;
+    height: 10%;
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 3fr 3fr 1fr;
+    grid-auto-rows: 1fr;
+
+    
+}
+
+.profile_pic{
+    grid-row: 1;
+
+}
+.top_of_post{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    height: 20%;
+    width: 100%;
+    gap: 15px;
+    margin-bottom: 10px;
+
+
+}
+.top_right{
+    grid-row: 1;
+}
+.comment{
+   width: 100%;
+   display: flex;
+
+
+}
+#comment_text{
+    width:680px;
+}
+.body{
+    height: 150px;
+    display: grid;
+    gap: 50px;
+}
+.comment_box{
+    display: flex;
+    gap: 10px;
+}
+

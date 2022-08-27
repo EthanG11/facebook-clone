@@ -1,0 +1,30 @@
+      <%=stylesheet_link_tag "devise_reg"%>
+      
+      <div class="container">
+      <h4 class = "row justify-content-center">Sign Up</h4>
+      <div class="row justify-content-center">
+        <div class="col-3 align-items-center">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
+          <%= f.label :name %><br />
+          <%= f.text_field :name, autofocus: true, class:"form-control" %>
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+          <%= f.label :password %>
+          <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "new-password", class:"form-control" %>
+            <%= f.label :password_confirmation %><br />
+            <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control" %>
+          <div class="actions">
+            <%= f.submit "Sign up", class: "btn btn-primary"%>
+          </div>
+      <% end %>
+      <%= render "devise/shared/links" %>
+          </div>
+          </div>
+        
+      </div>
+        </div>
+

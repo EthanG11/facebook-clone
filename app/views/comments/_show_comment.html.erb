@@ -1,0 +1,4 @@
+<div class="comment_box">
+    <div><%=link_to User.find(comment.user_id).name, user_show_path(comment.user_id)%>:</div>
+    <div><%=comment.text%></div>
+</div>
