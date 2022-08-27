@@ -3,8 +3,7 @@ In this project, I implemented a Facebook clone in Ruby on Rails. Currently supp
 
 Features currently being worked on include Likes,messaging, and a user profile view. 
 
-The Devise Gem handles user authentication.
-and the Gravatar API is queried for user profile pictures through the Gravatastic gem.
+The Devise Gem handles user authentication and the Gravatar API is queried for user profile pictures through the Gravatastic gem.
 
 
 
