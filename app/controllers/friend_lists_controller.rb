@@ -14,7 +14,6 @@ class FriendListsController < ApplicationController
             @friends << User.find(friend.user_id)
         end
 
-     
     end
 
     def create

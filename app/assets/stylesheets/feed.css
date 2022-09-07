@@ -3,16 +3,13 @@
 }
 
 .post{
-    width:79%;
-    height: 10%;
+    max-height: 10%;
+    max-width: 79%;
     margin-top: 30px;
-    background-color: white;
     padding: 20px;
-    display: grid;
-    grid-template-rows: 3fr 3fr 1fr;
-    grid-auto-rows: 1fr;
-
-    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .profile_pic{
@@ -23,7 +20,7 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;
-    height: 20%;
+    height: 30%;
     width: 100%;
     gap: 15px;
     margin-bottom: 10px;
@@ -36,8 +33,6 @@
 .comment{
    width: 100%;
    display: flex;
-
-
 }
 #comment_text{
     width:680px;
@@ -50,5 +45,10 @@
 .comment_box{
     display: flex;
     gap: 10px;
+}
+
+.feed{
+    display: grid;
+    gap: 20px;
 }
 

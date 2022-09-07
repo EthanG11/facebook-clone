@@ -17,12 +17,7 @@ class HomeController < ApplicationController
     
     def show_user
         @user = User.find(params[:id])
-
         @user_posts = Post.where(user_id: params[:id]).to_a
-        
-
-
-
     end
 
     private 
