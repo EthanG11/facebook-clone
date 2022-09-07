@@ -14,5 +14,6 @@ class SearchesController < ApplicationController
             
             redirect_to :root_path, notice:"User not found!"
         end
+    end
 
 end
